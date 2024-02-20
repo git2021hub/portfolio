@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I'm <span>Akshay Dhame</span><br>From Maharastra</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <!-------------------About ----------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I am a skilled Software developer with experience in front-end and backend technologies,
+                        I specialize in developing end-to-end applications that provides an optimal user experience.
+                    </p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>FrontEnd</span><br>Designing Web in HTML,CSS and JAVASCRIPT</li>
+                            <li><span>Backend</span><br>core java,advanced java,jsp,servlet</li>
+                            <li><span>Framework</span><br>Hibernate, Spring :- core,jdbc,mvc</li>
+                            <li><span>Databases</span><br>Mysql, DBMS</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Internship</span>
+                                <br>junior java developer &nbsp;&nbsp;&nbsp;  March'2022 - July'2022</li>  
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Post Graduation(Mcs)</span><br>At S.P. College,pune. &nbsp; (2022)</li>
+                            <li><span>Graduation(Bcs)</span><br>S.P. College, pune. &nbsp; (2020)</li>
+                            <li><span>HSC</span><br>Sinhgad College,pune &nbsp; (2016)</li>
+                            <li><span>Graduation</span><br>Jayhind Vidyalaya. &nbsp; (2014)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------services----------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>web developer with strong knowledge in front-end technologies like JAVASCRIPT,react,html,css</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa fa-empire"></i>
+                    <h2>Web applications</h2>
+                    <p>We provide services for build web based applications.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <!-- <div>
+                    <i class="fa fa-android"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, quis? Perferendis id explicabo blanditiis placeat, accusantium esse illo deleniti commodi.</p>
+                    <a href="#">Learn More</a>
+                </div> -->
+                
+            </div>
+        </div>
+    </div>
+
+
+    <!-- --------------Portfolio----------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/techblog.png" alt="">
+                    <div class="layer">
+                        <h3>Tech Blog</h3>
+                        <p>Tech Blog is web-based Application that is basically used for writing blogs/posts
+                            Related to technology. In this we created modules like categories, posts, user login, logout. user can read post by categorizing topic
+                            </p>
+                        <a href="https://github.com/git2021hub/TechBlog"><i class="fa fa-file-text"></i></a>
+                    </div>
+                </div> 
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Tech Blog</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, voluptatem!</p>
+                        <a href="#"><i class="fa fa-file-text"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Ecommerce Website</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, voluptatem!</p>
+                        <a href="#"><i class="fas fa-external-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+
+    <!-- ----------------------------Contact------------------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h2 class="sub-title">Contact Me</h2>
+                    <p><i class="fa fa-paper-plane"></i> dhameakshay99@gmail.com</p>
+                    <p><i class="fa fa-phone-square"></i>7743956693</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa fa-facebook-square"></i></a>
+                        <a href=""><i class="fa fa-twitter-square"></i></a>
+                        <a href=""><i class="fa fa-twitter-square"></i></a>
+                        <a href=""><i class="fa fa-linkedin-square"></i></a>
+                    </div>
+
+                    <a href="images/my-cv.pdf" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="your name" required>
+                        <input type="email" name="Email" placeholder="your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea> 
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                </div>
+            </div>         
+        </div>
+
+        <div class="copyright">
+            <p>copyright © akshay.portfolio Website....<i class="fa fa-heart"></i></p>
+        </div>
+    </div>
+<!-- ------------------javascript------------ -->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        // show tab when click by id
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<!-- ----------side menu for small screen----------- -->
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = 0;
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<!-- --------fix navbar----------- -->
+<script>
+    var navbar = document.getElementById("navbar");
+    var menu=document.getElementById("menu");
+
+    window.onscroll = function(){
+        if(window.pageYOffset >= menu.offsetTop){
+            navbar.classList.add("sticky");
+        }else{
+            navbar.classList.remove("sticky");
+        }
+    }
+</script>
+</body>
+
+</html>
